@@ -1,3 +1,11 @@
 To work with this application you need to have [nodeJS](https://nodejs.dev) installed.
 
-Then run `node app.js`.
+# How to use it
+
+The `MONGODB_ADDRESS` environment needs to be defined before starting this application.
+
+```
+export MONGODB_ADDRESS=? 
+node app.js
+```
+
