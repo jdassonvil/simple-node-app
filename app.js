@@ -3,6 +3,11 @@ const http = require('http');
 const hostname = '0.0.0.0';
 const port = 3000;
 
+process.on('SIGINT', (code) => {
+  console.log('Process exit event with code: ', code);
+  process.exit()
+});
+
 const server = http.createServer((req, res) => {
   console.log("request received");
   var message = 'Hello Simplon';
