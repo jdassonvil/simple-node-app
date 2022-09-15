@@ -1,0 +1,22 @@
+{
+  "name": "simple-node-app",
+  "version": "0.0.1",
+  "description": "Just a simple node app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdassonvil/simple-node-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdassonvil/simple-node-app/issues"
+  },
+  "homepage": "https://github.com/jdassonvil/simple-node-app#readme",
+  "dependencies": {
+    "pg": "^8.8.0"
+  }
+}

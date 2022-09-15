@@ -1,3 +1,21 @@
-To work with this application you need to have [nodeJS](https://nodejs.dev) installed.
+# Simple node app
 
-Then run `node app.js`.
+## Requirements
+
+- To work with this application you need to have [nodeJS](https://nodejs.dev) installed.
+
+
+# Run it
+1. Create the messages table
+
+```
+CREATE TABLE messages(text TEXT);
+INSERT INTO messages(text) VALUES('hello simplon');
+INSERT INTO messages(text) VALUES('hello world’);
+```
+
+2. Run the app (see the [node-postgres doc](https://node-postgres.com/features/connecting) for more details on environment variables)
+
+```
+PGDATABASE=? PGPASSWORD=? PGUSER=? node app.js
+```
