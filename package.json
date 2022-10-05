@@ -4,7 +4,9 @@
   "description": "Just a simple node app",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Running unit test\" && exit 0",
+    "lint": "eslint . --ext .js",
+    "format": "prettier --check ."
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,9 @@
   "homepage": "https://github.com/jdassonvil/simple-node-app#readme",
   "dependencies": {
     "pg": "^8.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.24.0",
+    "prettier": "2.7.1"
   }
 }
