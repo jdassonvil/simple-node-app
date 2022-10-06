@@ -14,9 +14,9 @@ jobs:
     - name: install dependencies
       run: npm install
     - name: check code format 
-      run: npx prettier --write .
+      run: npm run format
     - name: Run ESLint
-      run: eslint . --ext .js
+      run: npm run lint
     - name: run unit tests
       run: npm test
     - name: check for vulnerabilitise
