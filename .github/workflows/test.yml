@@ -6,18 +6,18 @@ jobs:
   tests:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: setup node
-      uses: actions/setup-node@v2
-      with:
-        node-version: '16.x'
-    - name: install dependencies
-      run: npm install
-    - name: check code format 
-      run: npm run format
-    - name: Run ESLint
-      run: npm run lint
-    - name: run unit tests
-      run: npm test
-    - name: check for vulnerabilitise
-      run: npm audit
+      - uses: actions/checkout@v2
+      - name: setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16.x"
+      - name: install dependencies
+        run: npm install
+      - name: check code format
+        run: npm run format
+      - name: Run ESLint
+        run: npm run lint
+      - name: run unit tests
+        run: npm test
+      - name: check for vulnerabilitise
+        run: npm audit
