@@ -4,13 +4,12 @@
 
 - To work with this application you need to have [nodeJS](https://nodejs.dev) installed.
 
-
 ## Development
 
 - Run `npm install` to install the dependencies
 
-
 ## Run it
+
 1. Create the messages table
 
 ```
